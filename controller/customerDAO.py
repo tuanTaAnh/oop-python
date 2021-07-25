@@ -23,6 +23,11 @@ class CustomerDAO:
             print(cus.get_infor())
         print()
 
+    def get_dict_list(self):
+        cusdictlist = []
+        for cus in self.cusList:
+            cusdictlist.append(cus.get_infor_dist())
+        return cusdictlist
 
     def __check_unique_id(self, id):
         for cus in self.cusList:

@@ -23,6 +23,12 @@ class ProductDAO:
             print(prod.get_infor())
         print()
 
+    def get_dict_list(self):
+        proddictlist = []
+        for prod in self.prodList:
+            proddictlist.append(prod.get_infor_dist())
+        return proddictlist
+
 
     def __check_unique_id(self, id):
         for prod in self.prodList:

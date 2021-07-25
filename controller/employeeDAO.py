@@ -22,6 +22,12 @@ class EmployeeDAO:
             print(emp.get_infor())
         print()
 
+    def get_dict_list(self):
+        empdictlist = []
+        for emp in self.employList:
+            empdictlist.append(emp.get_infor_dist())
+        return empdictlist
+
 
     def __check_unique_id(self, id):
         for emp in self.employList:

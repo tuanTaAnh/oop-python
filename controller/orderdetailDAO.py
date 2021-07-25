@@ -23,6 +23,12 @@ class OrderDetailDAO:
             print(ord_det.get_infor())
         print()
 
+    def get_dict_list(self):
+        ord_dedictlist = []
+        for ord_de in self.orddeList:
+            ord_dedictlist.append(ord_de.get_infor_dist())
+        return ord_dedictlist
+
 
     def __check_unique_id(self, id):
         for ord_det in self.orddeList:

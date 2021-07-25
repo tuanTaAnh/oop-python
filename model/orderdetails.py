@@ -43,3 +43,11 @@ class OrderDetail:
 
     def get_infor(self):
         return self.orderdetailID + ", " + self.orderID + ", " + self.productID + ", " + str(self.quatity) +  "."
+
+    def get_infor_dist(self):
+        return {
+            "orderdetailID": self.orderdetailID,
+            "orderID": self.orderID,
+            "productID": self.productID,
+            "quatity": self.quatity,
+        }

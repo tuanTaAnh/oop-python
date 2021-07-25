@@ -23,6 +23,12 @@ class ShipperDAO:
             print(shi.get_infor())
         print()
 
+    def get_dict_list(self):
+        shidictlist = []
+        for shi in self.shipperList:
+            shidictlist.append(shi.get_infor_dist())
+        return shidictlist
+
     def __check_unique_id(self, id):
         for shi in self.shipperList:
             if shi.shipperID == id:

@@ -68,3 +68,14 @@ class Customer:
     def get_infor(self):
         return self.customerName + "," + self.contactName + "," \
                + self.address + "," + self.city + "," + self.country + "," + self.postalcode + "."
+
+    def get_infor_dist(self):
+        return {
+            "customerID": self.customerID,
+            "customerName": self.customerName,
+            "contactName": self.contactName,
+            "address": self.address,
+            "city": self.city,
+            "country":self.country,
+             "postalcode":  self.postalcode
+        }

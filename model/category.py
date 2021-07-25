@@ -34,3 +34,10 @@ class Category:
 
     def get_infor(self):
         return self.categoryID + "," + self.categoryName + ","  + self.description + "."
+
+    def get_infor_dist(self):
+        return {
+            "categoryID": self.categoryID,
+            "categoryName": self.categoryName,
+            "description": self.description,
+        }

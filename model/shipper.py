@@ -31,3 +31,10 @@ class Shipper:
 
     def get_infor(self):
         return str(self.shipperID) + ", " + self.shipperName + ", "  + self.Phone + "."
+
+    def get_infor_dist(self):
+        return {
+            "shipperID": self.shipperID,
+            "shipperName": self.shipperName,
+            "Phone": self.Phone
+        }

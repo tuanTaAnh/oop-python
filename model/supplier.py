@@ -77,3 +77,15 @@ class Supplier:
     def get_infor(self):
         return self.supplierID + "," + self.supplierName + "," \
                + self.contactName + "," + self.address + "," + self.country + "," + self.phone + "."
+
+    def get_infor_dist(self):
+        return {
+            "shipperID": self.supplierID,
+            "supplierName": self.supplierName,
+            "contactName": self.contactName,
+            "address": self.address,
+            "city": self.city,
+            "postalcode": self.postalcode,
+            "country": self.country,
+            "Phone": self.phone
+        }

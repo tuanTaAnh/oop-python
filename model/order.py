@@ -52,3 +52,12 @@ class Order:
 
     def get_infor(self):
         return self.orderID + "," + self.customerID + "," + self.employeeID + "," + self.shipperID + "," + self.OrderDate + "."
+
+    def get_infor_dist(self):
+        return {
+            "categoryID": self.orderID,
+            "customerID": self.customerID,
+            "description": self.employee,
+            "shipper": self.shipper,
+            "OrderDat": self.OrderDat
+        }

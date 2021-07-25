@@ -59,3 +59,13 @@ class Employee:
     def get_infor(self):
         return str(self.employeeID) + ", " + self.lastname + ", " \
                + self.firstname + ", " + str(self.birthdate) + ", " + self.photos + ", " + self.notes + "."
+
+    def get_infor_dist(self):
+        return {
+            "employID": self.employID,
+            "lastname": self.lastname,
+            "firstname": self.firstname,
+            "birthdate": self.birthdate,
+            "photos":self.photos,
+             "notes":  self. notes
+        }

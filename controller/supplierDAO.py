@@ -23,6 +23,12 @@ class SupplierDAO:
             print(sup.get_infor())
         print()
 
+    def get_dict_list(self):
+        supdictlist = []
+        for sup in self.supList:
+            supdictlist.append(sup.get_infor_dist())
+        return supdictlist
+
 
     def __check_unique_id(self, id):
         for sup in self.supList:

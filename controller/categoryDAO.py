@@ -23,6 +23,12 @@ class CategoryDAO:
             print(cat.get_infor())
         print()
 
+    def get_dict_list(self):
+        catdictlist = []
+        for cat in self.catList:
+            catdictlist.append(cat.get_infor_dist())
+        return catdictlist
+
 
     def __check_unique_id(self, id):
         for cat in self.catList:

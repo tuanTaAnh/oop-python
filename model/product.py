@@ -61,3 +61,13 @@ class Product:
 
     def get_infor(self):
         return self.productID + ", " + self.productName + ", " + self.supplierID + ", " + self.categoryID + ", " + str(self.unit) + ", " + str(self.price) + "."
+
+    def get_infor_dist(self):
+        return {
+            "productID": self.productID,
+            "productName": self.productName,
+            "supplier": self. supplier,
+            "category": self.category,
+            "unit": self.unit,
+            "price": self.price
+        }

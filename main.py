@@ -94,7 +94,6 @@ if __name__ == '__main__':
 
     pro = prodList.get_pro_by_id(productID)
     assert pro != None, "No found employee ID"
-    print(pro)
 
     ord_detList.add_orderdetail(orderdetailID, ord, pro, quantity)
     ord_detList.print_orderdetaildlist()
